@@ -1,0 +1,27 @@
+
+<h1 ><b>Shimano Water Meter Readings</b></h1>
+<hr>
+<style>
+    table {
+        margin:0 auto;
+        text-align:center;
+    }
+    h1 {
+        margin:0 auto;
+        text-align:center;
+    }
+</style>
+<table >
+    <tr>
+        <th *ngFor = "let column of headers">
+            {{column}}
+        </th>      
+    </tr>
+
+    <tr *ngFor = "let row of rows">
+        <td *ngFor = "let column of headers" >
+            {{row[column]}}
+        </td>
+    </tr>
+
+</table>
